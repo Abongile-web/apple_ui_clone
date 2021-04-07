@@ -26,6 +26,9 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   height: 4.5vh;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 .header .nav {
@@ -68,7 +71,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 73vh;
+  min-height: 73vh;
   text-align: center;
   background-color: #f9f9f9;
 }
@@ -120,7 +123,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 73vh;
+  min-height: 73vh;
   text-align: center;
   background-color: black;
   color: #f0f0f0;
@@ -161,5 +164,64 @@ html {
   -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
           mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
           mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
+
+.appleWatch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 73vh;
+  text-align: center;
+  background-color: black;
+  color: #f0f0f0;
+  margin-top: 10px;
+}
+
+.appleWatch .title {
+  padding-top: 45px;
+}
+
+.appleWatch .title h1 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.appleWatch .title span {
+  color: #ce4141;
+  font-size: 15px;
+}
+
+.appleWatch .title p {
+  font-size: 25px;
+  padding: 15px;
+}
+
+.appleWatch .title a {
+  font-size: 19px;
+  color: #118fde;
+  cursor: pointer;
+}
+
+.appleWatch .title a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+}
+
+.appleWatch .image {
+  padding-bottom: 40px;
+}
+
+.appleWatch .image img {
+  width: 60%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 73vh;
+  min-height: 73vh;
   text-align: center;
 }
 
@@ -33,6 +33,9 @@ html {
   display: flex;
   justify-content: center;
   height: 4.5vh;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
   .nav {
     display: flex;
     justify-content: space-around;
@@ -123,6 +126,43 @@ html {
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0)
       );
+    }
+  }
+}
+
+//hero 3 section
+.appleWatch {
+  @include hero();
+  background-color: black;
+  color: rgb(240, 240, 240);
+  margin-top: 10px;
+  .title {
+    padding-top: 45px;
+    h1 {
+      font-size: 40px;
+      padding: 10px;
+    }
+    span {
+      color: rgb(206, 65, 65);
+      font-size: 15px;
+    }
+    p {
+      font-size: 25px;
+      padding: 15px;
+    }
+    a {
+      font-size: 19px;
+      color: #118fde;
+      cursor: pointer;
+      &:hover {
+        text-decoration: 2px underline;
+      }
+    }
+  }
+  .image {
+    padding-bottom: 40px;
+    img {
+      width: 60%;
     }
   }
 }
