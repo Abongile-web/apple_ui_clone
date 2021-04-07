@@ -1,3 +1,12 @@
+@mixin hero() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 73vh;
+  text-align: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -45,12 +54,7 @@ html {
 
 //Hero 1 section
 .iphone12 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 73vh;
-  text-align: center;
+  @include hero();
   background-color: rgb(249, 249, 249);
   .title {
     padding-top: 45px;
@@ -75,6 +79,50 @@ html {
     padding: 10px 0;
     img {
       width: 68%;
+    }
+  }
+}
+
+//Hero 2 section
+.iphone12_pro {
+  @include hero();
+  background-color: black;
+  color: rgb(240, 240, 240);
+  .title {
+    padding-top: 45px;
+    h1 {
+      font-size: 55px;
+      padding: 10px;
+    }
+    p {
+      font-size: 25px;
+      padding-bottom: 15px;
+    }
+    a {
+      font-size: 19px;
+      color: #118fde;
+      cursor: pointer;
+      &:hover {
+        text-decoration: 2px underline;
+      }
+    }
+  }
+  .image {
+    padding: 10px 0;
+    img {
+      width: 50%;
+      -webkit-mask-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 1)),
+        to(rgba(0, 0, 0, 0))
+      );
+      mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+      );
     }
   }
 }

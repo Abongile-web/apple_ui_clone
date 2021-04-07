@@ -105,4 +105,61 @@ html {
 .iphone12 .image img {
   width: 68%;
 }
+
+.iphone12_pro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 73vh;
+  text-align: center;
+  background-color: black;
+  color: #f0f0f0;
+}
+
+.iphone12_pro .title {
+  padding-top: 45px;
+}
+
+.iphone12_pro .title h1 {
+  font-size: 55px;
+  padding: 10px;
+}
+
+.iphone12_pro .title p {
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.iphone12_pro .title a {
+  font-size: 19px;
+  color: #118fde;
+  cursor: pointer;
+}
+
+.iphone12_pro .title a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+}
+
+.iphone12_pro .image {
+  padding: 10px 0;
+}
+
+.iphone12_pro .image img {
+  width: 50%;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+          mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
 /*# sourceMappingURL=style.css.map */
