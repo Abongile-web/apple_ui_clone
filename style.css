@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
   font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #181818;
 }
 
 html {
@@ -15,15 +16,16 @@ html {
 }
 
 .header {
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(0, 0, 0, 0.82);
   color: #cecece;
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 5vh;
+  height: 4.5vh;
 }
 
 .header .nav {
@@ -33,10 +35,14 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 55%;
-  height: 5vh;
+  height: 4.5vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header .nav :first-child {
+  font-size: 20px;
 }
 
 .header .nav li {
@@ -46,5 +52,57 @@ html {
 
 .header .nav li:hover {
   color: #ebebeb;
+}
+
+.iphone12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 73vh;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.iphone12 .title {
+  padding-top: 45px;
+}
+
+.iphone12 .title h1 {
+  font-size: 55px;
+  padding: 10px;
+}
+
+.iphone12 .title p {
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.iphone12 .title a {
+  font-size: 19px;
+  color: #118fde;
+  cursor: pointer;
+}
+
+.iphone12 .title a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+}
+
+.iphone12 .image {
+  padding: 10px 0;
+}
+
+.iphone12 .image img {
+  width: 68%;
 }
 /*# sourceMappingURL=style.css.map */
