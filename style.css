@@ -74,6 +74,7 @@ html {
   min-height: 73vh;
   text-align: center;
   background-color: #f9f9f9;
+  padding-top: 30px;
 }
 
 .iphone12 .title {
@@ -155,7 +156,7 @@ html {
 }
 
 .iphone12_pro .image {
-  padding: 10px 0;
+  padding: 40px 0;
 }
 
 .iphone12_pro .image img {
@@ -218,10 +219,186 @@ html {
 }
 
 .appleWatch .image {
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 .appleWatch .image img {
   width: 60%;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid .singleGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 60vh;
+  width: 48.5%;
+  text-align: center;
+  padding: 10px;
+}
+
+.grid .ipadAir {
+  background-color: #f9f9f9;
+  display: block;
+  padding-top: 60px;
+  margin: 1% 1% 0 1%;
+}
+
+.grid .ipadAir h1 {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.grid .ipadAir p {
+  font-size: 20px;
+  color: #4a4a4a;
+  padding-bottom: 10px;
+}
+
+.grid .ipadAir a {
+  font-size: 17px;
+  color: #118fde;
+  cursor: pointer;
+}
+
+.grid .ipadAir a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+}
+
+.grid .ipadAir .image {
+  padding-top: 80px;
+}
+
+.grid .ipadAir .image img {
+  width: 60%;
+}
+
+.grid .airpodMax {
+  background-color: #f9f9f9;
+  display: block;
+  padding-top: 60px;
+  margin-top: 1%;
+}
+
+.grid .airpodMax h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.grid .airpodMax a {
+  font-size: 17px;
+  color: #118fde;
+  cursor: pointer;
+}
+
+.grid .airpodMax a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+}
+
+.grid .airpodMax .image {
+  padding-top: 40px;
+}
+
+.grid .airpodMax .image img {
+  width: 35%;
+}
+
+.grid .appleTv {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#010101)), url("./Assets/tvos13-smart-tv-apple-tv-app-hero.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #010101), url("./Assets/tvos13-smart-tv-apple-tv-app-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f0f0f0;
+  margin: 1% 1% 0 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid .appleTv .text_apple_tv {
+  padding-bottom: 40px;
+}
+
+.grid .appleTv .text_apple_tv h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.grid .appleTv .text_apple_tv p {
+  font-size: 20px;
+  width: 55%;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid .appleTv .text_apple_tv a {
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.grid .appleTv .text_apple_tv a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+}
+
+.grid .appleArcade {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0))), url("./Assets/apple_arcade_seven_8424ef4d5a24113df88d176a2f0e3444-xl.jpg");
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)), url("./Assets/apple_arcade_seven_8424ef4d5a24113df88d176a2f0e3444-xl.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #f0f0f0;
+}
+
+.grid .appleArcade .text_apple_arcade {
+  padding-top: 40px;
+}
+
+.grid .appleArcade .text_apple_arcade h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.grid .appleArcade .text_apple_arcade p {
+  font-size: 20px;
+  width: 55%;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid .appleArcade .text_apple_arcade a {
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.grid .appleArcade .text_apple_arcade a:hover {
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
 }
 /*# sourceMappingURL=style.css.map */
