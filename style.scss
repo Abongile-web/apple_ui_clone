@@ -316,3 +316,68 @@ html {
     }
   }
 }
+
+//Footer section
+
+.footer {
+  background-color: rgb(249, 249, 249);
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  color: rgb(171, 171, 171);
+  font-size: 12px;
+  .rules {
+    width: 48%;
+    ol {
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .underline {
+    padding-top: 20px;
+    width: 48%;
+    height: 1px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+  }
+  .other_services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 48%;
+    padding-top: 20px;
+    li {
+      list-style: none;
+      padding: 5px 0;
+    }
+    .list_heading {
+      color: rgb(109, 109, 109);
+      font-weight: 700;
+    }
+  }
+
+  #retailer {
+    width: 48%;
+    padding-top: 20px;
+    a {
+      color: #118fde;
+    }
+  }
+
+  .copyright {
+    width: 48%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    .copy {
+      width: 60%;
+    }
+    a {
+      width: 8%;
+    }
+  }
+}

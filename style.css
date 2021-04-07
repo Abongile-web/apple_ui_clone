@@ -401,4 +401,92 @@ html {
   -webkit-text-decoration: 2px underline;
           text-decoration: 2px underline;
 }
+
+.footer {
+  background-color: #f9f9f9;
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  color: #ababab;
+  font-size: 12px;
+}
+
+.footer .rules {
+  width: 48%;
+}
+
+.footer .rules ol li {
+  padding-bottom: 10px;
+}
+
+.footer .underline {
+  padding-top: 20px;
+  width: 48%;
+  height: 1px;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.footer .other_services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 48%;
+  padding-top: 20px;
+}
+
+.footer .other_services li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.footer .other_services .list_heading {
+  color: #6d6d6d;
+  font-weight: 700;
+}
+
+.footer #retailer {
+  width: 48%;
+  padding-top: 20px;
+}
+
+.footer #retailer a {
+  color: #118fde;
+}
+
+.footer .copyright {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.footer .copyright .copy {
+  width: 60%;
+}
+
+.footer .copyright a {
+  width: 8%;
+}
 /*# sourceMappingURL=style.css.map */
