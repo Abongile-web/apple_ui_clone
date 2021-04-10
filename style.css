@@ -57,6 +57,18 @@ html {
   color: #ebebeb;
 }
 
+.header .nav2 {
+  display: none;
+}
+
+.header .mobile_nav #logo {
+  display: none;
+}
+
+.header .mobile_nav #menu {
+  display: none;
+}
+
 .iphone12 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,6 +173,10 @@ html {
 
 .iphone12_pro .image {
   padding: 40px 0;
+}
+
+.iphone12_pro .image #mobile_view2 {
+  display: none;
 }
 
 .iphone12_pro .image img {
@@ -425,6 +441,14 @@ html {
   font-size: 12px;
 }
 
+.footer .copyright2 {
+  display: none;
+}
+
+.footer .mobile_services {
+  display: none;
+}
+
 .footer .rules {
   width: 50%;
 }
@@ -499,6 +523,12 @@ html {
   width: 8%;
 }
 
+@media only screen and (max-width: 1366px) {
+  .header .nav {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .header .nav {
     width: 100%;
@@ -553,7 +583,92 @@ html {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 5vh;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .nav2 {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.99);
+    width: 100%;
+    height: 95vh;
+    margin-top: 5vh;
+  }
+  .header .nav2 .search {
+    background-color: rgba(70, 70, 70, 0.82);
+    margin: 5px;
+    height: 5vh;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .nav2 .search i {
+    font-size: 15px;
+    padding: 0 10px;
+    color: #cecece;
+  }
+  .header .nav2 .search input {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+  }
+  .header .nav2 ul {
+    width: 78%;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+  }
+  .header .nav2 ul li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+  .header .nav2 .long {
+    padding: 5px;
+  }
+  .header .nav2 .underline {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #878787;
+  }
+  .header .mobile_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .header .mobile_nav #logo {
+    display: block;
+    font-size: 20px;
+    z-index: 99;
+  }
+  .header .mobile_nav #menu {
+    display: block;
+    width: 48%;
+    z-index: 99;
+  }
   .iphone12 {
     min-height: 68vh;
   }
@@ -568,10 +683,12 @@ html {
     font-size: 18px;
   }
   .iphone12 .image {
-    padding: 10px 0;
+    padding-bottom: 35px;
   }
   .iphone12 .image #mobile_view {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
   }
@@ -579,7 +696,154 @@ html {
     display: none;
   }
   .iphone12 .image img {
-    width: 68%;
+    width: 85%;
+  }
+  .iphone12_pro {
+    min-height: 68vh;
+  }
+  .iphone12_pro .title {
+    padding-top: 45px;
+  }
+  .iphone12_pro .title h1 {
+    font-size: 30px;
+    padding: 5px;
+  }
+  .iphone12_pro .title p {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .iphone12_pro .image {
+    padding: 0px 0;
+  }
+  .iphone12_pro .image #desktop_view2 {
+    display: none;
+  }
+  .iphone12_pro .image #mobile_view2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .iphone12_pro .image img {
+    width: 70%;
+  }
+  .appleWatch {
+    min-height: 40vh;
+  }
+  .appleWatch .title {
+    padding-top: 25px;
+  }
+  .appleWatch .title h1 {
+    font-size: 25px;
+    padding: 5px;
+  }
+  .appleWatch .title span {
+    font-size: 10px;
+  }
+  .appleWatch .title p {
+    font-size: 18px;
+  }
+  .appleWatch .image {
+    padding: 40px 0;
+  }
+  .appleWatch .image img {
+    width: 55%;
+  }
+  .grid .singleGrid {
+    min-height: 65vh;
+    width: 100%;
+  }
+  .grid .ipadAir h1 {
+    font-size: 30px;
+  }
+  .grid .ipadAir p {
+    font-size: 18px;
+  }
+  .grid .ipadAir .image img {
+    width: 90%;
+  }
+  .grid .airpodMax h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .grid .airpodMax .image img {
+    width: 75%;
+  }
+  .grid .appleTv .text_apple_tv {
+    padding-bottom: 40px;
+  }
+  .grid .appleTv .text_apple_tv h1 {
+    font-size: 30px;
+  }
+  .grid .appleTv .text_apple_tv p {
+    width: 80%;
+  }
+  .grid .appleArcade .text_apple_arcade h1 {
+    font-size: 30px;
+  }
+  .grid .appleArcade .text_apple_arcade p {
+    font-size: 18px;
+    width: 90%;
+  }
+  .footer .mobile_services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .footer .mobile_services ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .footer .mobile_services ul li {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #616161;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  .footer .rules {
+    width: 100%;
+  }
+  .footer .underline {
+    padding-top: 20px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #c2c2c2;
+  }
+  .footer .other_services {
+    display: none;
+  }
+  .footer #retailer {
+    width: 100%;
+  }
+  .footer .copyright {
+    display: none;
+  }
+  .footer .copyright2 {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .footer .copyright2 #privacy {
+    color: #616161;
+    padding-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

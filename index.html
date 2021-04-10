@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Apple UI Clone</title>
     <script src="https://use.fontawesome.com/e9a23594ea.js"></script>
 </head>
@@ -13,6 +14,12 @@
     <!--Navigation section-->
 
     <section class="header">
+            <div class="mobile_nav">
+                <i id='menu' class="fa fa-bars" aria-hidden="true"></i>
+
+                <i id='logo' class="fa fa-apple" aria-hidden="true"></i>
+            </div>
+
             <ul class="nav">
                 <li><i class="fa fa-apple" aria-hidden="true"></i></li>
                 <li>Mac</li>
@@ -24,6 +31,31 @@
                 <li>Support</li>
                 <li>Where to Buy</li>
                 <li><i class="fa fa-search" aria-hidden="true"></i></li>
+            </ul>
+
+            <ul class="animated slideInDown nav2">
+                <div class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input placeholder='Search apple.com'>
+                </div>
+                <div class="underline long"></div>
+                <ul>
+                    <li>Mac</li>
+                    <div class="underline"></div>
+                    <li>iPad</li>
+                    <div class="underline"></div>
+                    <li>iPhone</li>
+                    <div class="underline"></div>
+                    <li>Watch</li>
+                    <div class="underline"></div>
+                    <li>TV</li>
+                    <div class="underline"></div>
+                    <li>Music</li>
+                    <div class="underline"></div>
+                    <li>Support</li>
+                    <div class="underline"></div>
+                    <li>Where to Buy</li>
+                </ul>
             </ul>
     </section>
 
@@ -38,7 +70,7 @@
 
         <div class="image iphone_12">
             <img id='desktop_view' src="./Assets/Hero-1.png" alt="Image of iPhone 12">
-            <img id='mobile_view' src="./Assets/Hero-1.png" alt="Image of iPhone 12">
+            <img id='mobile_view' src="./Assets/full phone view.png" alt="Image of iPhone 12">
 
         </div>
     </section>
@@ -53,7 +85,8 @@
         </div>
 
         <div class="image iphone_12Pro">
-            <img src="./Assets/Hero-2.png" alt="Image of iPhone 12 Pro">
+            <img id='desktop_view2' src="./Assets/Hero-2.png" alt="Image of iPhone 12 Pro">
+            <img id='mobile_view2' src="./Assets/iPhone_12_Pro full body.png" alt="Image of iPhone 12 Pro">
         </div>
     </section>
 
@@ -196,6 +229,25 @@
             </ul>
         </div>
 
+        <div class="mobile_services">
+            <ul>
+                <li>Explore <i class="fa fa-plus" aria-hidden="true"></i></li>
+                <div class="underline"></div>
+                <li>Services <i class="fa fa-plus" aria-hidden="true"></i></li>
+                <div class="underline"></div>
+                <li>Account <i class="fa fa-plus" aria-hidden="true"></i></li>
+                <div class="underline"></div>
+                <li>For Business <i class="fa fa-plus" aria-hidden="true"></i></li>
+                <div class="underline"></div>
+                <li>For Education <i class="fa fa-plus" aria-hidden="true"></i></li>
+                <div class="underline"></div>
+                <li>Apple Values <i class="fa fa-plus" aria-hidden="true"></i></li>
+                <div class="underline"></div>
+                <li>About Apple <i class="fa fa-plus" aria-hidden="true"></i></li>
+                <div class="underline"></div>
+            </ul>
+        </div>
+
         <p id="retailer"><a>Find a retailer</a> near you.</p>
 
         <div class="underline"></div>
@@ -205,6 +257,14 @@
             <span>Privacy Policy &nbsp; | &nbsp; Terms of Use &nbsp;| &nbsp;Legal&nbsp; | &nbsp;Site Map</span>
             </p>
             <a>South Africa</a>
+        </div>
+
+        <div class="copyright2">
+            <p>South Africa</p>
+            <br>
+            <p>Copyright © 2021 Apple Inc. All rights reserved.</p>
+            <p id="privacy">Privacy Policy &nbsp; | &nbsp; Terms of Use &nbsp;| &nbsp;Legal&nbsp; | &nbsp;Site Map</p>
+
         </div>
     </section>
 
