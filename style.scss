@@ -81,6 +81,9 @@ html {
   }
   .image {
     padding: 10px 0;
+    #mobile_view {
+      display: none;
+    }
     img {
       width: 68%;
     }
@@ -142,6 +145,7 @@ html {
     padding-top: 45px;
     h1 {
       font-size: 40px;
+      letter-spacing: 2px;
       padding: 10px;
     }
     span {
@@ -329,7 +333,7 @@ html {
   color: rgb(171, 171, 171);
   font-size: 12px;
   .rules {
-    width: 48%;
+    width: 50%;
     ol {
       li {
         padding-bottom: 10px;
@@ -338,7 +342,7 @@ html {
   }
   .underline {
     padding-top: 20px;
-    width: 48%;
+    width: 50%;
     height: 1px;
     border-bottom: 1px solid rgb(194, 194, 194);
   }
@@ -346,7 +350,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 48%;
+    width: 50%;
     padding-top: 20px;
     li {
       list-style: none;
@@ -359,7 +363,7 @@ html {
   }
 
   #retailer {
-    width: 48%;
+    width: 50%;
     padding-top: 20px;
     a {
       color: #118fde;
@@ -367,17 +371,445 @@ html {
   }
 
   .copyright {
-    width: 48%;
+    width: 50%;
     display: flex;
     padding-bottom: 30px;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     .copy {
-      width: 60%;
+      width: 80%;
+    }
+    span {
+      padding: 0 20px;
     }
     a {
       width: 8%;
     }
   }
+}
+
+//Web responsiveness section
+
+//ipad
+
+@media only screen and (max-width: 1024px) {
+  //navigation section
+  .header {
+    .nav {
+      width: 100%;
+    }
+  }
+
+  //hero 1 section
+  .iphone12 {
+    min-height: 50vh;
+    .title {
+      padding: 65px 45px 45px 45px;
+      h1 {
+        font-size: 45px;
+      }
+    }
+  }
+
+  //hero 2 section
+  .iphone12_pro {
+    min-height: 50vh;
+    .title {
+      h1 {
+        font-size: 45px;
+      }
+    }
+  }
+
+  //hero 3 section
+  .appleWatch {
+    min-height: 50vh;
+    .title {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  //Other products/grid section
+
+  .grid {
+    .singleGrid {
+      min-height: 40vh;
+    }
+
+    //iPad section
+    .ipadAir {
+      .image {
+        img {
+          width: 80%;
+        }
+      }
+    }
+
+    //airPod section
+    .airpodMax {
+      .image {
+        img {
+          width: 55%;
+        }
+      }
+    }
+  }
+
+  //Footer section
+
+  .footer {
+    padding: 20px;
+    .rules {
+      width: 100%;
+    }
+    .underline {
+      width: 100%;
+    }
+    .other_services {
+      width: 100%;
+    }
+
+    #retailer {
+      width: 100%;
+    }
+
+    .copyright {
+      width: 100%;
+    }
+  }
+}
+
+//iphone
+
+@media only screen and (max-width: 768px) {
+  //Hero 1 section
+  .iphone12 {
+    min-height: 68vh;
+    .title {
+      padding-top: 45px;
+      h1 {
+        font-size: 30px;
+        padding: 5px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .image {
+      padding: 10px 0;
+      #mobile_view {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #desktop_view {
+        display: none;
+      }
+      img {
+        width: 68%;
+      }
+    }
+  }
+
+  //Hero 2 section
+  // .iphone12_pro {
+  //   @include hero();
+  //   background-color: black;
+  //   color: rgb(240, 240, 240);
+  //   .title {
+  //     padding-top: 45px;
+  //     h1 {
+  //       font-size: 55px;
+  //       padding: 10px;
+  //     }
+  //     p {
+  //       font-size: 25px;
+  //       padding-bottom: 15px;
+  //     }
+  //     a {
+  //       font-size: 19px;
+  //       color: #118fde;
+  //       cursor: pointer;
+  //       &:hover {
+  //         text-decoration: 2px underline;
+  //       }
+  //     }
+  //   }
+  //   .image {
+  //     padding: 40px 0;
+  //     img {
+  //       width: 50%;
+  //       -webkit-mask-image: -webkit-gradient(
+  //         linear,
+  //         left top,
+  //         left bottom,
+  //         from(rgba(0, 0, 0, 1)),
+  //         to(rgba(0, 0, 0, 0))
+  //       );
+  //       mask-image: linear-gradient(
+  //         to bottom,
+  //         rgba(0, 0, 0, 1),
+  //         rgba(0, 0, 0, 0)
+  //       );
+  //     }
+  //   }
+  // }
+
+  // //hero 3 section
+
+  // .appleWatch {
+  //   @include hero();
+  //   background-color: black;
+  //   color: rgb(240, 240, 240);
+  //   margin-top: 10px;
+  //   .title {
+  //     padding-top: 45px;
+  //     h1 {
+  //       font-size: 40px;
+  //       letter-spacing: 2px;
+  //       padding: 10px;
+  //     }
+  //     span {
+  //       color: rgb(206, 65, 65);
+  //       font-size: 15px;
+  //     }
+  //     p {
+  //       font-size: 25px;
+  //       padding: 15px;
+  //     }
+  //     a {
+  //       font-size: 19px;
+  //       color: #118fde;
+  //       cursor: pointer;
+  //       &:hover {
+  //         text-decoration: 2px underline;
+  //       }
+  //     }
+  //   }
+  //   .image {
+  //     padding: 40px 0;
+  //     img {
+  //       width: 60%;
+  //     }
+  //   }
+  // }
+
+  // //Other products/grid section
+
+  // .grid {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   .singleGrid {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: space-evenly;
+  //     min-height: 60vh;
+  //     width: 48.5%;
+  //     text-align: center;
+  //     padding: 10px;
+  //   }
+
+  //   //iPad section
+  //   .ipadAir {
+  //     background-color: rgb(249, 249, 249);
+  //     display: block;
+  //     padding-top: 60px;
+  //     margin: 1% 1% 0 1%;
+  //     h1 {
+  //       font-size: 40px;
+  //       padding-bottom: 5px;
+  //     }
+  //     p {
+  //       font-size: 20px;
+  //       color: rgb(74, 74, 74);
+  //       padding-bottom: 10px;
+  //     }
+  //     a {
+  //       font-size: 17px;
+  //       color: #118fde;
+  //       cursor: pointer;
+  //       &:hover {
+  //         text-decoration: 2px underline;
+  //       }
+  //     }
+  //     .image {
+  //       padding-top: 80px;
+  //       img {
+  //         width: 60%;
+  //       }
+  //     }
+  //   }
+
+  //   //airPod section
+  //   .airpodMax {
+  //     background-color: rgb(249, 249, 249);
+  //     display: block;
+  //     padding-top: 60px;
+  //     margin-top: 1%;
+  //     h1 {
+  //       font-size: 40px;
+  //       padding-bottom: 10px;
+  //     }
+  //     a {
+  //       font-size: 17px;
+  //       color: #118fde;
+  //       cursor: pointer;
+  //       &:hover {
+  //         text-decoration: 2px underline;
+  //       }
+  //     }
+  //     .image {
+  //       padding-top: 40px;
+  //       img {
+  //         width: 35%;
+  //       }
+  //     }
+  //   }
+
+  //   //Apple tv section
+  //   .appleTv {
+  //     background-image: linear-gradient(
+  //         to bottom,
+  //         rgba(0, 0, 0, 0),
+  //         rgba(1, 1, 1, 1)
+  //       ),
+  //       url("./Assets/tvos13-smart-tv-apple-tv-app-hero.jpg");
+  //     background-position: center;
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     color: rgb(240, 240, 240);
+  //     margin: 1% 1% 0 1%;
+  //     justify-content: space-between;
+  //     .text_apple_tv {
+  //       padding-bottom: 40px;
+  //       h1 {
+  //         font-size: 40px;
+  //         padding-bottom: 10px;
+  //       }
+  //       p {
+  //         font-size: 20px;
+  //         width: 55%;
+  //         padding-bottom: 10px;
+  //         margin-left: auto;
+  //         margin-right: auto;
+  //       }
+  //       a {
+  //         padding: 0 18px;
+  //         cursor: pointer;
+  //         &:hover {
+  //           text-decoration: 2px underline;
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   //Apple arcade section
+  //   .appleArcade {
+  //     background-image: linear-gradient(
+  //         to bottom,
+  //         rgba(0, 0, 0, 1),
+  //         rgba(0, 0, 0, 0)
+  //       ),
+  //       url("./Assets/apple_arcade_seven_8424ef4d5a24113df88d176a2f0e3444-xl.jpg");
+  //     background-position: center;
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     margin-top: 1%;
+  //     justify-content: space-between;
+  //     color: rgb(240, 240, 240);
+  //     .text_apple_arcade {
+  //       padding-top: 40px;
+  //       h1 {
+  //         font-size: 40px;
+  //         padding-bottom: 10px;
+  //       }
+  //       p {
+  //         font-size: 20px;
+  //         width: 55%;
+  //         padding-bottom: 10px;
+  //         margin-left: auto;
+  //         margin-right: auto;
+  //       }
+  //       a {
+  //         padding: 0 18px;
+  //         cursor: pointer;
+  //         &:hover {
+  //           text-decoration: 2px underline;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // //Footer section
+
+  // .footer {
+  //   background-color: rgb(249, 249, 249);
+  //   margin-top: 1%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   padding-top: 10px;
+  //   color: rgb(171, 171, 171);
+  //   font-size: 12px;
+  //   .rules {
+  //     width: 50%;
+  //     ol {
+  //       li {
+  //         padding-bottom: 10px;
+  //       }
+  //     }
+  //   }
+  //   .underline {
+  //     padding-top: 20px;
+  //     width: 50%;
+  //     height: 1px;
+  //     border-bottom: 1px solid rgb(194, 194, 194);
+  //   }
+  //   .other_services {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     justify-content: space-between;
+  //     width: 50%;
+  //     padding-top: 20px;
+  //     li {
+  //       list-style: none;
+  //       padding: 5px 0;
+  //     }
+  //     .list_heading {
+  //       color: rgb(109, 109, 109);
+  //       font-weight: 700;
+  //     }
+  //   }
+
+  //   #retailer {
+  //     width: 50%;
+  //     padding-top: 20px;
+  //     a {
+  //       color: #118fde;
+  //     }
+  //   }
+
+  //   .copyright {
+  //     width: 50%;
+  //     display: flex;
+  //     padding-bottom: 30px;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     padding-top: 10px;
+  //     .copy {
+  //       width: 80%;
+  //     }
+  //     span {
+  //       padding: 0 20px;
+  //     }
+  //     a {
+  //       width: 8%;
+  //     }
+  //   }
+  // }
 }

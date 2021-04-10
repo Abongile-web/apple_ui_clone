@@ -106,6 +106,10 @@ html {
   padding: 10px 0;
 }
 
+.iphone12 .image #mobile_view {
+  display: none;
+}
+
 .iphone12 .image img {
   width: 68%;
 }
@@ -194,6 +198,7 @@ html {
 
 .appleWatch .title h1 {
   font-size: 40px;
+  letter-spacing: 2px;
   padding: 10px;
 }
 
@@ -421,7 +426,7 @@ html {
 }
 
 .footer .rules {
-  width: 48%;
+  width: 50%;
 }
 
 .footer .rules ol li {
@@ -430,7 +435,7 @@ html {
 
 .footer .underline {
   padding-top: 20px;
-  width: 48%;
+  width: 50%;
   height: 1px;
   border-bottom: 1px solid #c2c2c2;
 }
@@ -444,7 +449,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 48%;
+  width: 50%;
   padding-top: 20px;
 }
 
@@ -459,7 +464,7 @@ html {
 }
 
 .footer #retailer {
-  width: 48%;
+  width: 50%;
   padding-top: 20px;
 }
 
@@ -468,7 +473,7 @@ html {
 }
 
 .footer .copyright {
-  width: 48%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,10 +488,98 @@ html {
 }
 
 .footer .copyright .copy {
-  width: 60%;
+  width: 80%;
+}
+
+.footer .copyright span {
+  padding: 0 20px;
 }
 
 .footer .copyright a {
   width: 8%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header .nav {
+    width: 100%;
+  }
+  .iphone12 {
+    min-height: 50vh;
+  }
+  .iphone12 .title {
+    padding: 65px 45px 45px 45px;
+  }
+  .iphone12 .title h1 {
+    font-size: 45px;
+  }
+  .iphone12_pro {
+    min-height: 50vh;
+  }
+  .iphone12_pro .title h1 {
+    font-size: 45px;
+  }
+  .appleWatch {
+    min-height: 50vh;
+  }
+  .appleWatch .title h1 {
+    font-size: 35px;
+  }
+  .grid .singleGrid {
+    min-height: 40vh;
+  }
+  .grid .ipadAir .image img {
+    width: 80%;
+  }
+  .grid .airpodMax .image img {
+    width: 55%;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer .rules {
+    width: 100%;
+  }
+  .footer .underline {
+    width: 100%;
+  }
+  .footer .other_services {
+    width: 100%;
+  }
+  .footer #retailer {
+    width: 100%;
+  }
+  .footer .copyright {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .iphone12 {
+    min-height: 68vh;
+  }
+  .iphone12 .title {
+    padding-top: 45px;
+  }
+  .iphone12 .title h1 {
+    font-size: 30px;
+    padding: 5px;
+  }
+  .iphone12 .title p {
+    font-size: 18px;
+  }
+  .iphone12 .image {
+    padding: 10px 0;
+  }
+  .iphone12 .image #mobile_view {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .iphone12 .image #desktop_view {
+    display: none;
+  }
+  .iphone12 .image img {
+    width: 68%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
